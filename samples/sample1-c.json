@@ -1,0 +1,37 @@
+{
+	"id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+	"type": "malware-instance",
+	"timestamp": "2015-12-21T19:59:11+00:00",
+	"title": "Sakurel Malware"
+}
+
+{
+	"id": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
+	"type": "indicator",
+	"timestamp": "2015-12-21T19:59:11+00:00",
+	"title": "Sakurel Malware",
+	"indicator_expression": "...",
+	"indicator_type": [
+		{
+			"value": "File Hash Watchlist",
+			"vocab": "indicator-type-vocab-1.1"			
+		}
+	]
+}
+
+{
+	"id": "example:rel-fd81e9fb-5c3b-4922-9307-dd226079c00f",
+	"type": "related-ttp",
+	"timestamp": "2015-12-21T19:59:12+00:00",
+	"confidence": {
+		"value": {
+			"value": "High",
+			"vocab": "high-medium-low-vocab-1.0"
+		}
+	}
+	"from": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
+	"to": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+	"relationship_nature": {
+		"value": "Indicated TTP"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"id": "example:ta-5971dd17-9930-45c9-9346-f33359fda030",
+	"type": "threat-actor",
+	"timestamp": "2015-12-21T21:54:19+00:00",
+	"name": "Black Vine"
+}
+
+{
+	"id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+	"type": "malware-instance",
+	"timestamp": "2015-12-21T19:59:11+00:00",
+	"title": "Sakurel Malware"
+}
+
+{
+	"id": "example:rel-9d0c539e-a874-42c7-a055-3e900b98724f",
+	"type": "related-ttp",
+	"timestamp": "2015-12-21T19:59:12+00:00",
+	"confidence": {
+		"value": {
+			"value": "High",
+			"vocab": "high-medium-low-vocab-1.0"
+		}
+	}
+	"from": "example:ta-5971dd17-9930-45c9-9346-f33359fda030",
+	"to": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+	"relationship_nature": {
+		"value": "Observed TTP"
+	}
+}

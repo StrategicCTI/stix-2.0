@@ -1,0 +1,26 @@
+{
+	"id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+	"type": "malware-instance",
+	"timestamp": "2015-12-21T19:59:11+00:00",
+	"title": "Sakurel Malware"
+}
+
+{
+	"id": "example:rel-65a02cec-cf23-4dfe-a29b-986a392206c6",
+	"type": "related-killchain-phase",
+	"timestamp": "2015-12-21T19:59:50+00:00",
+	"from": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+	"to": "example:ttp-e1e4e3f7-be3b-4b39-b80a-a593cfd99a4f"
+	"relationship_nature": {
+		"value": "Related Killchain Phase"
+	}	
+}
+
+...
+
+{
+	"id": "example:ttp-e1e4e3f7-be3b-4b39-b80a-a593cfd99a4f",
+	"type": "killchain-phase",
+	"timestamp": "2014-12-21T18:49:08+00:00",
+	"name": "Installation"
+}

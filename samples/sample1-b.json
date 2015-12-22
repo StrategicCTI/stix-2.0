@@ -1,0 +1,14 @@
+{
+	"id": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
+	"type": "indicator",
+	"timestamp": "2015-12-21T19:59:11+00:00",
+	"title": "Sakurel Malware",
+	"indicator_expression": "...",
+	"indicator_type": [
+		{
+			"value": "File Hash Watchlist",
+			"vocab": "indicator-type-vocab-1.1"			
+		}
+	]
+}
+

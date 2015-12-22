@@ -1,0 +1,13 @@
+{
+	"id": "example:inc-83422c77-904c-4dc1-aff5-5c38f3a2c55c",
+	"type": "incident",
+	"timestamp": "2015-12-21T21:59:17+00:00",
+	"alternate_id": [
+		""
+	],
+	"title": "Anthem",
+	"status": {
+		"value": "Incident Reported",
+		"vocab": "incident-status-vocab-1.0"
+	}
+}
