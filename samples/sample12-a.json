@@ -1,59 +1,59 @@
 {
-    "id": "example:ta-5971dd17-9930-45c9-9346-f33359fda030",
-    "type": "threat-actor",
-    "timestamp": {"value": "2015-12-21T21:54:19.000000+00:00"},
-    "name": "Black Vine"
+	"id": "example:ta-5971dd17-9930-45c9-9346-f33359fda030",
+	"type": "threat-actor",
+	"timestamp": {"value": "2015-12-21T21:54:19.000000+00:00"},
+	"name": "Black Vine"
 }
 
 {
-    "id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
-    "type": "malware-instance",
-    "timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
-    "name": "Sakurel Malware",
-    "malware_instance_type": {
-        "value": "Remote Access Trojan", 
-        "vocab": "malware-type-vocab-1.0"
-    },
-    ...
+	"id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+	"type": "malware-instance",
+	"timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
+	"name": "Sakurel Malware",
+	"malware_instance_type": {
+		"value": "Remote Access Trojan", 
+		"vocab": "malware-type-vocab-1.0"
+	},
+	...
 }
 
 {
-    "id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
-    "type": "infrastructure",
-    "timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
-    "title": "Sakurel Command & Control Server",
-    "infrastructure_type": {
-        "value": "Hosting",	
-        "vocab": "attacker-infrastructure-type-vocab-1.0"
-    },
-    ...
+	"id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+	"type": "infrastructure",
+	"timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
+	"title": "Sakurel Command & Control Server",
+	"infrastructure_type": {
+		"value": "Hosting",	
+		"vocab": "attacker-infrastructure-type-vocab-1.0"
+	},
+    "observable_characterizationt": "observable pattern characterizing the infrastructure would go here"
 }
 
 {
-    "id": "example:ttp-a8e12797-a5a9-d0d6-bd87-28e7d69f409d",
-    "type": "victim-targeting",
-    "timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
-    "title": "Black Vine Victim Targeting: Healthcare Sector",
-    "specification": "..."
+	"id": "example:ttp-a8e12797-a5a9-d0d6-bd87-28e7d69f409d",
+	"type": "victim-targeting",
+	"timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
+	"title": "Targeting of Healthcare Sector",
+	"specification": "CIQ content for sector would go here. Still to be determined how to do this in JSON."
 }
 
 {
-    "id": "example:rel-3b9edb33-5379-4566-8deb-9db1eba074d8",
-    "type": "related-ttp",
-    "timestamp": {"value": "2015-12-21T19:59:12.000000+00:00"},
-    "confidence": {
-        "value": {
-            "value": "High", 
-            "vocab": "high-medium-low-vocab-1.0"
-        }
-    }
-    "relationship_nature": {"value": "Related TTP"}
-    "from": "example:ta-5971dd17-9930-45c9-9346-f33359fda030",
-    "to": [
-        "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
-        "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
-        "example:ttp-a8e12797-a5a9-d0d6-bd87-28e7d69f409d"
-    ],
+	"id": "example:rel-3b9edb33-5379-4566-8deb-9db1eba074d8",
+	"type": "related-ttp",
+	"timestamp": {"value": "2015-12-21T19:59:12.000000+00:00"},
+	"confidence": {
+		"value": {
+			"value": "High", 
+			"vocab": "high-medium-low-vocab-1.0"
+		}
+	},
+	"from": "example:ta-5971dd17-9930-45c9-9346-f33359fda030",
+	"to": [
+		"example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+		"example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+		"example:ttp-a8e12797-a5a9-d0d6-bd87-28e7d69f409d"
+	],
+	"relationship_nature": {"value": "Observed TTP"}
 }
 
 
