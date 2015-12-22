@@ -1,128 +1,74 @@
 {
-	"id": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
-	"type": "killchain",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"title": "Lockheed Martin Kill Chain",
-	"definer": "LMCO"
+    "id": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
+    "type": "killchain",
+    "timestamp": {"value": "2014-12-21T18:49:08.000134+00:00"},
+    "title": "Lockheed Martin Kill Chain",
+    "definer": "LMCO"
 }
 
 {
-	"id": "example:ttp-af1016d6-a744-4ed7-ac91-00fe2272185a",
-	"type": "killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"name": "Reconnaissance"
+    "id": "example:ttp-af1016d6-a744-4ed7-ac91-00fe2272185a",
+    "type": "killchain-phase",
+    "timestamp": {"value": "2014-12-21T18:49:08.000167+00:00"},
+    "name": "Reconnaissance"
 }
 
 {
-	"id": "example:ttp-445b4827-3cca-42bd-8421-f2e947133c16",
-	"type": "killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"name": "Weaponization"
+    "id": "example:ttp-445b4827-3cca-42bd-8421-f2e947133c16",
+    "type": "killchain-phase",
+    "timestamp": {"value": "2014-12-21T18:49:08.000245+00:00"},
+    "name": "Weaponization"
 }
 
 {
-	"id": "example:ttp-79a0e041-9d5f-49bb-ada4-8322622b162d",
-	"type": "killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"name": "Delivery"
+    "id": "example:ttp-79a0e041-9d5f-49bb-ada4-8322622b162d",
+    "type": "killchain-phase",
+    "timestamp": {"value": "2014-12-21T18:49:08.000355+00:00"},
+    "name": "Delivery"
 }
 
 {
-	"id": "example:ttp-f706e4e7-53d8-44ef-967f-81535c9db7d0",
-	"type": "killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"name": "Exploitation"
+    "id": "example:ttp-f706e4e7-53d8-44ef-967f-81535c9db7d0",
+    "type": "killchain-phase",
+    "timestamp": {"value": "2014-12-21T18:49:08.000578+00:00"},
+    "name": "Exploitation"
 }
 
 {
-	"id": "example:ttp-e1e4e3f7-be3b-4b39-b80a-a593cfd99a4f",
-	"type": "killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"name": "Installation"
+    "id": "example:ttp-e1e4e3f7-be3b-4b39-b80a-a593cfd99a4f",
+    "type": "killchain-phase",
+    "timestamp": {"value": "2014-12-21T18:49:08.000601+00:00"},
+    "name": "Installation"
 }
 
 {
-	"id": "example:ttp-d6dc32b9-2538-4951-8733-3cb9ef1daae2",
-	"type": "killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"name": "Command and Control"
+    "id": "example:ttp-d6dc32b9-2538-4951-8733-3cb9ef1daae2",
+    "type": "killchain-phase",
+    "timestamp": {"value": "2014-12-21T18:49:08.000734+00:00"},
+    "name": "Command and Control"
 }
 
 {
-	"id": "example:ttp-786ca8f9-2d9a-4213-b38e-399af4a2e5d6",
-	"type": "killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"name": "Actions on Objectives"
+    "id": "example:ttp-786ca8f9-2d9a-4213-b38e-399af4a2e5d6",
+    "type": "killchain-phase",
+    "timestamp": {"value": "2014-12-21T18:49:08.000811+00:00"},
+    "name": "Actions on Objectives"
 }
 
 {
-	"id": "example:rel-b067ec9d-2bc4-4fd7-9c47-6acdcd6ba68b",
-	"type": "contained-killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"from": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
-	"to": "example:ttp-af1016d6-a744-4ed7-ac91-00fe2272185a",
-	"relationship_nature": {
-		"value": "Contained Killchain Phase"
-	}	
+    "id": "example:rel-b067ec9d-2bc4-4fd7-9c47-6acdcd6ba68b",
+    "type": "contained-killchain-phase",
+    "timestamp": {"value": "2014-12-21T18:49:08.000949+00:00"},
+    "from": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
+    "to": [
+        "example:ttp-af1016d6-a744-4ed7-ac91-00fe2272185a",
+        "example:ttp-445b4827-3cca-42bd-8421-f2e947133c16",
+        "example:ttp-79a0e041-9d5f-49bb-ada4-8322622b162d",
+        "example:ttp-f706e4e7-53d8-44ef-967f-81535c9db7d0",
+        "example:ttp-e1e4e3f7-be3b-4b39-b80a-a593cfd99a4f",
+        "example:ttp-d6dc32b9-2538-4951-8733-3cb9ef1daae2",
+        "example:ttp-786ca8f9-2d9a-4213-b38e-399af4a2e5d6"
+    ],
+    "relationship_nature": {"value": "Contained Killchain Phase"}
 }
 
-{
-	"id": "example:rel-fa8e2e01-330e-4391-87cb-d9e8b03cfeb0",
-	"type": "contained-killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"from": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
-	"to": "example:ttp-445b4827-3cca-42bd-8421-f2e947133c16",
-	"relationship_nature": {
-		"value": "Contained Killchain Phase"
-	}	
-
-{
-	"id": "example:rel-d8dc6d72-3f41-4a6c-8cc5-5cddcf879577",
-	"type": "contained-killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"from": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
-	"to": "example:ttp-79a0e041-9d5f-49bb-ada4-8322622b162d",
-	"relationship_nature": {
-		"value": "Contained Killchain Phase"
-	}	
-
-{
-	"id": "example:rel-51c9df54-2968-4391-81d4-9059e22d5d9b",
-	"type": "contained-killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"from": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
-	"to": "example:ttp-f706e4e7-53d8-44ef-967f-81535c9db7d0",
-	"relationship_nature": {
-		"value": "Contained Killchain Phase"
-	}	
-
-{
-	"id": "example:rel-eaf17346-0e29-40a8-a0c6-068257919da7",
-	"type": "contained-killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"from": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
-	"to": "example:ttp-e1e4e3f7-be3b-4b39-b80a-a593cfd99a4f",
-	"relationship_nature": {
-		"value": "Contained Killchain Phase"
-	}	
-
-{
-	"id": "example:rel-f656ec45-1ec4-44d1-943f-0bdacd3c2edb",
-	"type": "contained-killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"from": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
-	"to": "example:ttp-d6dc32b9-2538-4951-8733-3cb9ef1daae2",
-	"relationship_nature": {
-		"value": "Contained Killchain Phase"
-	}	
-
-{
-	"id": "example:rel-060db482-890a-4251-8df9-461e50d5100a",
-	"type": "contained-killchain-phase",
-	"timestamp": "2014-12-21T18:49:08+00:00",
-	"from": "example:ttp-af3e707f-2fb9-49e5-8c37-14026ca0a5ff",
-	"to": "example:ttp-786ca8f9-2d9a-4213-b38e-399af4a2e5d6",
-	"relationship_nature": {
-		"value": "Contained Killchain Phase"
-	}	
-}
