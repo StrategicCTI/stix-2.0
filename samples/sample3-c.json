@@ -1,9 +1,9 @@
 {
 	"id": "example:cam-83422c77-904c-4dc1-aff5-5c38f3a2c55c",
 	"type": "campaign",
-	"timestamp": "2015-12-21T21:59:17+00:00",
-	"alternate_id": [
-		"BlackVine"
+	"timestamp": { "value" : "2015-12-21T19:59:17.000000+00:00" },
+	"alternative_id": [
+		{"value" : "BlackVine"}
 	],
 	"title": "Black Vine Healthcare Campaign",
 }

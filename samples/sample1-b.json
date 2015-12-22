@@ -1,9 +1,9 @@
 {
 	"id": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
 	"type": "indicator",
-	"timestamp": "2015-12-21T19:59:11+00:00",
+	"timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },,
 	"title": "Sakurel Malware",
-	"indicator_expression": "...",
+	"indicator_expression": "this would be an observable pattern for a particular file hash using the new CybOX patterning language under consideration",
 	"indicator_type": [
 		{
 			"value": "File Hash Watchlist",

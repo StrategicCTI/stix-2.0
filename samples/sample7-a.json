@@ -1,15 +1,8 @@
 {
-	"id": "example:obs-7fda922b-05e0-424c-aad7-43ea319ddb40",
-	"type": "cybox-observation",
-	"timestamp": "2015-12-21T22:45:10+00:00",
-	"title": "...",
-	"object": "example:obj-fa7de07b-ee02-4773-8cac-fa7161a7f998"
-}
-
-{
 	"id": "example:obj-fa7de07b-ee02-4773-8cac-fa7161a7f998",
-	"type": "file-object",
-	"timestamp": "2015-12-21T22:45:12+00:00",
+	"type": "file-object-observation",
+	"timestamp": { "value" : "2015-12-21T22:45:12.000000+00:00" },
+	"title": "Suspicious File",
 	"hashes": [
 		{
 			"type": "md5",

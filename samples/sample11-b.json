@@ -1,41 +1,14 @@
 {
 	"id": "example:sight-b686e902-3ee1-4d7e-a54f-448ccd741651",
 	"type": "quick-sighting",
-	"timestamp": "2015-12-21T20:49:08+00:00",
+	"timestamp": {"value" : "2015-12-21T20:49:08.000000+00:00"},
 	"to": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432"
-}
-
-{
-	"id": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
-	"type": "indicator",
-	"timestamp": "2015-12-21T19:59:11+00:00",
-	"title": "Sakurel Malware",
-	"indicator_expression": "...",
-	"indicator_type": [
-		{
-			"value": "File Hash Watchlist",
-			"vocab": "indicator-type-vocab-1.1"			
-		}
-	]
-}
-
-{
-	"id": "example:src-83dc6b53-ac3d-40e0-82ef-eab173c7ee1e",
-	"type": "source",
-	"timestamp": "2015-12-21T19:59:11+00:00",
-	"name": "..."
 }
 
 {
 	"id": "example:rel-9d0c539e-a874-42c7-a055-3e900b98724f",
 	"type": "related-source",
-	"timestamp": "2015-12-21T19:59:12+00:00",
-	"confidence": {
-		"value": {
-			"value": "High",
-			"vocab": "high-medium-low-vocab-1.0"
-		}
-	}
+	"timestamp": {"value" : "2015-12-21T19:59:12.000000+00:00"},
 	"from": "example:sight-b686e902-3ee1-4d7e-a54f-448ccd741651",
 	"to": "example:src-83dc6b53-ac3d-40e0-82ef-eab173c7ee1e",
 	"relationship_nature": {

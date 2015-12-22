@@ -1,6 +1,6 @@
 {
 	"id": "example:src-83dc6b53-ac3d-40e0-82ef-eab173c7ee1e",
 	"type": "source",
-	"timestamp": "2015-12-21T19:59:11+00:00",
-	"name": "..."
+	"timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
+	"name": "US-CERT"
 }
