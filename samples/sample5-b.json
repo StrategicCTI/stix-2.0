@@ -1,4 +1,11 @@
 {
+	"id": "example:src-83dc6b53-ac3d-40e0-82ef-eab173c7ee1e",
+	"type": "source",
+	"timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
+	"name": "US-CERT"
+}
+
+{
 	"id": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
 	"type": "indicator",
 	"timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
@@ -10,13 +17,6 @@
 			"vocab": "indicator-type-vocab-1.1"			
 		}
 	]
-}
-
-{
-	"id": "example:src-83dc6b53-ac3d-40e0-82ef-eab173c7ee1e",
-	"type": "source",
-	"timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
-	"name": "US-CERT"
 }
 
 {

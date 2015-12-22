@@ -33,7 +33,7 @@
 			"value": "High",
 			"vocab": "high-medium-low-vocab-1.0"
 		}
-	}
+	},
 	"from": "example:sight-cbc7d591-87f1-4765-a15e-c39e7b9d12ba",
 	"to": "example:obj-fa7de07b-ee02-4773-8cac-fa7161a7f998",
 	"relationship_nature": {

@@ -4,8 +4,8 @@
 	"timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
 	"alternative_id": [
 		{
-			"value" : "19-25665",
-			"definer" : "ACME Indicator Repository"},
+			"value": "19-25665",
+			"definer": "ACME Indicator Repository"},
 		{"value" : "Trojan.Sakurel"}
 	],
 	"title": "Sakurel Malware",

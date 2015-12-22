@@ -28,7 +28,7 @@
 			"value": "High",
 			"vocab": "high-medium-low-vocab-1.0"
 		}
-	}
+	},
 	"from": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
 	"to": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
 	"relationship_nature": {
