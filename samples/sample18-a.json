@@ -1,0 +1,43 @@
+    {
+        "id": "example:inc-6ea30b3a-dce5-44a9-9257-9f245168f0ed",
+        "type": "incident",
+        "timestamp": {"value": "2015-08-04T21:28:00.000000-07:00"},
+        "title": "Capstone Turbine Corporation Watering Hole Attack",
+        "status": {
+            "value": "Incident Reported",
+            "vocab": "incident-status-vocab-1.0"
+        }
+    }
+
+    {
+        "id": "example:victim-b438717c-eb0c-451c-8948-b83fffcd9f21",
+        "type": "victim",
+        "timestamp": {"value": "2015-08-04T21:28:00.000103-07:00"},
+        "name": "Capstone Turbine Corporation",
+        
+    }
+
+    {
+        "id": "example:ttp-22251550-f5f9-4359-8b02-bcc3179b52dd",
+        "type": "victim-targeting",
+        "timestamp": {"value": "2015-08-04T21:28:00.000103-07:00"},
+        "targeted_systems": {"value": "Web application"} 
+    }
+
+    {
+        "id": "example:rel-0ec67774-3dc1-4886-85ee-e3f8288f9d85",
+        "type": "related-victim",
+        "timestamp": {"value": "2015-08-04T21:28:00.000348-07:00"},
+        "relationship_nature": {"value": "Related Victim"},
+        "from": "example:inc-6ea30b3a-dce5-44a9-9257-9f245168f0ed",
+        "to": "example:victim-b438717c-eb0c-451c-8948-b83fffcd9f21"
+    }
+
+    {
+        "id": "example-rel-71418e00-08a1-46fe-82e1-ad95f81f769e",
+        "type": "related-ttp",
+        "timestamp": {"value": "2015-08-04T21:29:00.000103-07:00"},
+        "relationship_nature": {"value": "Related TTP"},
+        "from": "example:inc-6ea30b3a-dce5-44a9-9257-9f245168f0ed",
+        "to": "example:ttp-22251550-f5f9-4359-8b02-bcc3179b52dd"
+    }
