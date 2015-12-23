@@ -1,7 +1,7 @@
 {
     "id": "example:rep-84e4d88f-44ea-4bcd-bbf3-b2c1c320bcbd",
     "type": "report",
-    "timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
+    "timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
     "title": "The Black Vine Cyberespionage Group",
     "description": "...",
     "intent": [
@@ -21,7 +21,7 @@
 {
     "id": "example:src-a463ffb3-1bd9-4d94-b02d-74e4f1658283",
     "type": "source",
-    "timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
+    "timestamp": { "value": "2015-12-21T19:59:11.000000+00:00" },
     "name": "Symantec",
     "role": {
         "value": "Initial Author", 
@@ -39,17 +39,17 @@
 {
     "id": "example:rel-a05d8c6a-ccea-4a0a-a8e0-68dfe85fbfa9",
     "type": "contributing-source",
-    "timestamp": {"value": "2015-12-21T19:59:14.000000+00:00"},
+    "timestamp": { "value": "2015-12-21T19:59:14.000000+00:00" },
     "from": "example:rep-84e4d88f-44ea-4bcd-bbf3-b2c1c320bcbd",
     "to": "example:src-a463ffb3-1bd9-4d94-b02d-74e4f1658283",
-    "relationship_nature": {"value": "Contributing Source"}
+    "relationship_nature": { "value": "Contributing Source"  }
 }
 
 {
     "id": "example:rel-f82356ae-fe6c-437c-9c24-6b64314ae68a",
     "type": "related-ttp",
-    "timestamp": {"value": "2015-12-21T19:59:17.000000+00:00"},
-    "relationship_nature": "Related TTP",
+    "timestamp": { "value": "2015-12-21T19:59:17.000000+00:00" },
+    "relationship_nature": { "value": "Related TTP" },
     "from": "example:rep-84e4d88f-44ea-4bcd-bbf3-b2c1c320bcbd",
     "to": [
         "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
@@ -60,8 +60,8 @@
 {
     "id": "example:rel-f82356ae-fe6c-437c-9c24-6b64314ae68a",
     "type": "related-indicator",
-    "timestamp": {"value": "2015-12-21T19:59:17.000000+00:00"},
-    "relationship_nature": "Related Indicator",
+    "timestamp": { "value": "2015-12-21T19:59:17.000000+00:00" },
+    "relationship_nature": { "value": "Related Indicator" },
     "from": "example:rep-84e4d88f-44ea-4bcd-bbf3-b2c1c320bcbd",
     "to": [
         "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
@@ -73,7 +73,7 @@
     "id": "example:rel-72f666b6-f1db-4b2c-82e3-71ab49a84be1",
     "type": "related-campaign",
     "timestamp": {"value": "2015-12-21T19:59:17.000000+00:00"},
-    "relationship_nature": "Related Campaign",
+    "relationship_nature": { "value": "Related Campaign" },
     "from": "example:rep-84e4d88f-44ea-4bcd-bbf3-b2c1c320bcbd",
     "to": [
         "example:cam-83422c77-904c-4dc1-aff5-5c38f3a2c55c",
