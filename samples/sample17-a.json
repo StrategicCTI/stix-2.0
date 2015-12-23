@@ -1,23 +1,4 @@
 {
-    "id": "example:ttp-e5d3e508-553a-4a0d-b2b2-ab578a34edfc",
-    "type": "exploit",
-    "timestamp": {"value": "2015-12-21T19:59:22.000000+00:00"},
-    "title": "Remote Access through TempURL",
-    "intended_effect": [
-        {
-            "timestamp": {
-                "value": "2015-12-21T00:00:00.000000+00:00",
-                "timestamp_precision": "day"
-            },
-            "value": {
-                "value": "Unauthorized Access",
-                "vocab": "intended-effect-vocab-1.0"
-            }
-        }
-    ]
-}
-
-{
     "id": "example:et-2d470518-e91d-432f-bd2c-b87c2653a648",
     "type": "vulnerability",
     "timestamp": {"value": "2015-12-21T19:59:11.000000+00:00"},
@@ -44,7 +25,31 @@
     "id": "example:rel-d77aa1de-0787-42c7-8fbb-78569984980b",
     "type": "related-weakness",
     "timestamp": {"value": "2015-12-21T19:59:47.000000+00:00"},
-    "relationship_nature": {"value": "Related Weakness"},
+    "relationship_nature": {"value": "Instantiates Weakness"},
     "from": "example:et-2d470518-e91d-432f-bd2c-b87c2653a648",
-    "to": "example:et-2221091c-ab94-4089-a91b-82e6daae8bc4"	
+    "to": "example:et-2221091c-ab94-4089-a91b-82e6daae8bc4" 
+}
+
+{
+    "id": "example:ttp-e5d3e508-553a-4a0d-b2b2-ab578a34edfc",
+    "type": "exploit",
+    "timestamp": {"value": "2015-12-21T19:59:22.000000+00:00"},
+    "title": "Remote Access through TempURL",
+    "intended_effect": [
+        {
+            "value": {
+                "value": "Unauthorized Access",
+                "vocab": "intended-effect-vocab-1.0"
+            }
+        }
+    ]
+}
+
+{
+    "id": "example:rel-99df3633-cd20-493d-acf0-b77f3923c5cf",
+    "type": "related-exploit-target",
+    "timestamp": {"value": "2015-12-21T19:59:47.000000+00:00"},
+    "relationship_nature": {"value": "Targets Vulnerability"},
+    "from": "example:ttp-e5d3e508-553a-4a0d-b2b2-ab578a34edfc",
+    "to": "example:et-2d470518-e91d-432f-bd2c-b87c2653a648" 
 }
