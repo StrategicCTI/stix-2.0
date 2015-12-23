@@ -1,31 +1,31 @@
-    {
-        "id": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
-        "type": "indicator",
-        "timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
-        "title": "Sakurel Malware",
-        "indicator_expression": "this would be an observable pattern for a particular file hash using the new CybOX patterning language under consideration",
-        "indicator_type": [
-            {
-                "value": "File Hash Watchlist",
-                "vocab": "indicator-type-vocab-1.1"			
-            }
-        ],
-        "indicated_ttp": [
-            {
-                "confidence": {
-                    "value": {
-                        "value": "High",
-                        "vocab": "high-medium-low-vocab-1.0"
-                    }
-                },
-                "relationship": {"value": "Related TTP"},
-                "ttp": {
-                    "id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
-                    "type": "malware-instance",
-                    "timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
-                    "title": "Sakurel Malware"
+{
+    "id": "example:ind-b8e37090-5d62-45a1-ac2e-a88601b08432",
+    "type": "indicator",
+    "timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
+    "title": "Sakurel Malware",
+    "indicator_expression": "this would be an observable pattern for a particular file hash using the new CybOX patterning language under consideration",
+    "indicator_type": [
+        {
+            "value": "File Hash Watchlist",
+            "vocab": "indicator-type-vocab-1.1"			
+        }
+    ],
+    "indicated_ttp": [
+        {
+            "confidence": {
+                "value": {
+                    "value": "High",
+                    "vocab": "high-medium-low-vocab-1.0"
                 }
+            },
+            "relationship": {"value": "Related TTP"},
+            "ttp": {
+                "id": "example:ttp-6796e1db-a84d-4017-87d5-cdebfe4303be",
+                "type": "malware-instance",
+                "timestamp": { "value" : "2015-12-21T19:59:11.000000+00:00" },
+                "title": "Sakurel Malware"
             }
-        ]
-    }
+        }
+    ]
+}
 
