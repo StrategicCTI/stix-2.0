@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CCM Natural Language Glossary</title>
+		<meta charset="utf-8" />
+		<style>
+			.propdef {} 
+			.propname {font-style: italic;} 
+			.classname {} 
+			.datatype {font-style: italic;}
+			.headterm {font-weight: bold;}
+			.groupingterm {font-weight: bold; font-size: x-large;}
+			.doc {font-style: italic;}
+		</style>
+	</head>
+	<body>
+		<dl>
+																											<dt>
+				<span class="groupingterm">Unnamed Classes</span>
+			</dt>
+			<dd>
+				<dl>
+													<dt>
+						<span id="(Unnamed Class)" class="headterm">(Unnamed Class)</span>
+					</dt>
+													<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																												</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">A</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="ActionImpact" class="headterm">ActionImpact</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																											<dt>
+						<span id="Activity" class="headterm">Activity</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Date_Time</span> exactly one value of <span class='datatype'><a href="#"></a></span>
+											</li>
+									</ul>
+					</dd>
+									<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Description</span> any number of values of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The ActivityType class characterizes basic information about an activity a defender might use. It is an abstract class, so it MUST be extended via a subclass to express additional activity information. STIX does not define a default subclass. Note that an activity defined by the ActivityType class is fairly simple and includes only date/time information and a description. By contrast, a Course of Action construct contains detailed information such as the stage in the cyber threat management lifecycle to which the course of action is relevant, the impact and cost of applying the course of action, and efficacy of the course of action.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																										<dt>
+						<span id="ActorType" class="headterm">ActorType</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																							<dt>
+						<span id="AffectedAsset" class="headterm">AffectedAsset</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Description</span> any number of values of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Business_Function_Or_Role</span> at most one value of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Ownership_Class</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Management_Class</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Location_Class</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The AffectedAssetType class characterizes various aspects of the asset negatively impacted by the Incident.&lt;/p&gt;</span></p>
+							</dd>		
+																								<dt>
+						<span id="AffectedAssets" class="headterm">AffectedAssets</span>
+					</dt>
+													<dd>
+								<p><span class='doc'>&lt;p&gt;The AffectedAssetsType class specifies a list of one or more assets affected during the Incident. &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																							<dt>
+						<span id="Assertion" class="headterm">Assertion</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#IDableConstruct">IDableConstruct</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Value</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Confidence</span> at most one instance of <span class='classname'><a href="#Confidence">Confidence</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																					<dt>
+						<span id="AssetType" class="headterm">AssetType</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#AssetTypeVocab-1.0">AssetTypeVocab-1.0</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>count_affected</span> at most one value of <span class='datatype'><a href="#NonNegativeInteger">NonNegativeInteger</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																<dt>
+						<span id="AssetTypeVocab-1.0" class="headterm">AssetTypeVocab-1.0</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>value</span> exactly one value of <span class='datatype'><a href="#AssetTypeVocab-2.0">AssetTypeVocab-2.0</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																					<dt>
+						<span id="AttackPattern" class="headterm">AttackPattern</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#TTP">TTP</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>capec_id</span> exactly one value of <span class='datatype'><a href="#CAPEC_ID">CAPEC_ID</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The AttackPatternType class characterizes an individual attack pattern  through the capture of information such as a textual description and a Common Attack Pattern Enumeration and Classification (CAPEC) reference.  The AttackPatternType class is intended to be extended as appropriate to enable the structured description of an attack pattern.  STIX defines a default extension to the AttackPatternType class to leverage the Common Attack Pattern Enumeration and Classification (CAPEC) data model.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																				<dt>
+						<span id="AttackToolInformation" class="headterm">AttackToolInformation</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#ToolInformationType and TTP">ToolInformationType and TTP</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The ToolInformationType class characterizes information about a hardware or software tool by extending the CybOX ToolInformationType superclass (note that both classes are named “ToolInformationType” but are in different UML packages).    &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																																																																																		</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">C</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="Campaign" class="headterm">Campaign</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#DescriptiveProperties and IDableConstruct">DescriptiveProperties and IDableConstruct</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Status</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Confidence</span> at most one instance of <span class='classname'><a href="#Confidence">Confidence</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The CampaignType class characterizes a cyber threat campaign by capturing an asserted relationship between the threat actors who are involved, the TTPs used, and the incidents that comprise parts of the campaign in addition to other intrinsic properties.  Similar to the primary classes of all of the component data models in STIX, the CampaignType class extends a base class defined in the STIX Common data model; more specifically, it extends the CampaignBaseType base class, which provides the essential identifier (id) and identifier reference (idref) properties. &lt;/p&gt;</span></p>
+							</dd>		
+																																										<dt>
+						<span id="CAPEC2.7Instance" class="headterm">CAPEC2.7Instance</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#AttackPattern">AttackPattern</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																													<dt>
+						<span id="Categories" class="headterm">Categories</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Category</span> at least one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The CategoriesType class specifies one or more category labels for the Incident.  &lt;/p&gt;</span></p>
+							</dd>		
+																																										<dt>
+						<span id="CIQAddress3.0Instance" class="headterm">CIQAddress3.0Instance</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#AddressAbstract">AddressAbstract</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																								<dt>
+						<span id="COARequested" class="headterm">COARequested</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#COATaken">COATaken</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>priority</span> at most one value of <span class='datatype'><a href="#NoEmbeddedQuotesString">NoEmbeddedQuotesString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																									<dt>
+						<span id="COATaken" class="headterm">COATaken</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelatedCourseOfAction">RelatedCourseOfAction</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Time</span> at most one value of <span class='datatype'><a href="#"></a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Contributors</span> at most one value of <span class='datatype'><a href="#"></a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																			<dt>
+						<span id="CompositeIndicatorExpression" class="headterm">CompositeIndicatorExpression</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>operator</span> exactly one value of <span class='datatype'><a href="#OperatorTypeEnum">OperatorTypeEnum</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The CompositeIndicatorExpressionType class characterizes a composite Indicator expression through the specification of a single operator (the operator of the expression) and zero or more Indicators (the operands of the expression).  &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																																																																																					<dt>
+						<span id="Confidence" class="headterm">Confidence</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>timestamp</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Value</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Description</span> any number of values of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The ConfidenceType class characterizes confidence in an assertion.  &lt;/p&gt;</span></p>
+							</dd>		
+																								<dt>
+						<span id="ConfidenceAssertionChain" class="headterm">ConfidenceAssertionChain</span>
+					</dt>
+													<dd>
+								<p><span class='doc'>&lt;p&gt;The ConfidenceAssertionChainType class specifies a set of one or more related confidence levels in an assertion.&lt;/p&gt;</span></p>
+							</dd>		
+																																																								<dt>
+						<span id="Configuration" class="headterm">Configuration</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#ExploitTarget">ExploitTarget</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>CCE_ID</span> at most one value of <span class='datatype'><a href="#CCE_ID">CCE_ID</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The ConfigurationType class characterizes a software or hardware configuration as a potential Exploit Target.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																										<dt>
+						<span id="ContainedKillChainPhase" class="headterm">ContainedKillChainPhase</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#RelatedKillChainPhase">RelatedKillChainPhase</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Ordinality</span> exactly one value of <span class='datatype'><a href="#NonNegativeInteger">NonNegativeInteger</a></span>
+											</li>
+									</ul>
+					</dd>
+									<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#KillChain">KillChain</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																										<dt>
+						<span id="Cost" class="headterm">Cost</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																																																																																																																																																																																	<dt>
+						<span id="CourseOfAction" class="headterm">CourseOfAction</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#DescriptiveProperties and IDableConstruct">DescriptiveProperties and IDableConstruct</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Stage</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Type</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Parameter_Observables</span> at most one value of <span class='datatype'><a href="#ObservablePattern">ObservablePattern</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The CourseOfActionType class characterizes a cyber threat-relevant course of action through informative (title and description), formally structured (type and parameter observables) and contextual (objective, efficacy, impact, cost) properties. Similar to the primary classes of all of the component data models in STIX, the CourseOfActionType class extends a base class defined in the STIX Common data model; more specifically, it extends the CourseOfActionBaseType base class, which provides the essential identifier (id) and identifier reference (idref) properties.&lt;/p&gt;</span></p>
+							</dd>		
+																																										<dt>
+						<span id="CVRF1.1Instance" class="headterm">CVRF1.1Instance</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Vulnerability">Vulnerability</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The CVRF1.1InstanceType class provides an extension to the Exploit Target VulnerabilityType class and belongs to the stix-cvrf package. It imports and leverages the CVRF schema for structured characterization of Vulnerabilities. This could include characterization of zero-days or other vulnerabilities that do not have a CVE or OSVDB ID (Open Sourced Vulnerability Database). &lt;br&gt;&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																							<dt>
+						<span id="CVSSVector" class="headterm">CVSSVector</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Overall_Score</span> at most one value of <span class='datatype'><a href="#CVSSScore">CVSSScore</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Base_Score</span> at most one value of <span class='datatype'><a href="#CVSSScore">CVSSScore</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Base_Vector</span> at most one value of <span class='datatype'><a href="#CVSSBaseVector">CVSSBaseVector</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Temporal_Score</span> at most one value of <span class='datatype'><a href="#CVSSScore">CVSSScore</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Temporal_Vector</span> at most one value of <span class='datatype'><a href="#CVSSTemporalVector">CVSSTemporalVector</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Environmental_Score</span> at most one value of <span class='datatype'><a href="#CVSSScore">CVSSScore</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Environmental_Vector</span> at most one value of <span class='datatype'><a href="#CVSSEnvironmentalVector">CVSSEnvironmentalVector</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The CVSSVectorType class characterizes Common Vulnerability Scoring System (CVSS) data associated with the vulnerability.  &lt;/p&gt;</span></p>
+							</dd>		
+																																																					<dt>
+						<span id="CybOXIndicatorExpression" class="headterm">CybOXIndicatorExpression</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#IndicatorExpression">IndicatorExpression</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>CybOX_Observable_Pattern</span> any number of values of <span class='datatype'><a href="#ObservablePattern">ObservablePattern</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																						<dt>
+						<span id="cyboxObservation" class="headterm">cyboxObservation</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#DescriptiveProperties, IDableConstruct, and ObservableType">DescriptiveProperties, IDableConstruct, and ObservableType</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																											</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">D</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="DirectImpactSummary" class="headterm">DirectImpactSummary</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Business-Mission_Disruption</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Response_And_Recovery_Costs</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Asset_Losses</span> at most one instance of <span class='classname'><a href="#ControlledVocabularyProperty">ControlledVocabularyProperty</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The DirectImpactSummaryType class quantitatively characterizes (at a high level) the direct impact of the Incident, both financial and non-financial.&lt;/p&gt;</span></p>
+							</dd>		
+																																															</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">E</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="Effects" class="headterm">Effects</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Effect</span> at least one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The EffectsType class specifies one or more effects asserted as present for this Incident.  &lt;/p&gt;</span></p>
+							</dd>		
+																																																																										<dt>
+						<span id="Efficacy" class="headterm">Efficacy</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																										<dt>
+						<span id="Exploit" class="headterm">Exploit</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#TTP">TTP</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The ExploitType class characterizes an individual exploit instance through the capture of basic information such as the title and description of the exploit.  The ExploitType class is intended to be extended to enable the structured description of an exploit instance.  However, no extension is provided by STIX v 1.2; producers wanting to represent structured exploit instance information are encouraged to develop such an extension.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																													<dt>
+						<span id="ExploitTarget" class="headterm">ExploitTarget</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#DescriptiveProperties and IDableConstruct">DescriptiveProperties and IDableConstruct</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The ExploitTargetType class characterizes potential targets for exploitation by capturing characteristics of targeted victims that may make them vulnerable to attack.  Similar to the primary classes of all the component data models in STIX, the ExploitTargetType class extends a base class defined in the STIX Common data model; more specifically, it specializes the ExploitTargetBaseType base class, which provides the essential identifier (id) and identifier reference (idref) properties.&lt;/p&gt;</span></p>
+							</dd>		
+																																																	<dt>
+						<span id="ExternalImpactAssessmentModel" class="headterm">ExternalImpactAssessmentModel</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>model_name</span> at most one value of <span class='datatype'><a href="#NoEmbeddedQuotesString">NoEmbeddedQuotesString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>model_reference</span> at most one value of <span class='datatype'><a href="#URI">URI</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The ExternalImpactAssessmentModelType class is an abstract class enabling the definition through extension of incident impact assessment models external to STIX.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																											</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">G</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="GenericIndicatorExpression" class="headterm">GenericIndicatorExpression</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#IndicatorExpression">IndicatorExpression</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>reference_location</span> exactly one value of <span class='datatype'><a href="#URI">URI</a></span>
+											</li>
+									</ul>
+					</dd>
+									<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Description</span> any number of values of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Type</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Specification</span> at most one value of <span class='datatype'><a href="#NativeFormatString">NativeFormatString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The GenericTestMechanismType class enables any generic pattern or expression to be leveraged as a test mechanism in an Indicator. It specifies an extension from the abstract TestMechanismType from the indicator package.  It is contained in the genericTM package.  &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																													<dt>
+						<span id="GenericStructuredCOA" class="headterm">GenericStructuredCOA</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#StructuredCOA">StructuredCOA</a></span>. A valid instance satisfies the following necessary conditions:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>reference_location</span> exactly one value of <span class='datatype'><a href="#URI">URI</a></span>
+											</li>
+																															<li class='propdef'>				
+												<span class='propname'>Type</span> exactly one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+											</li>
+																															<li class='propdef'>				
+												<span class='propname'>Specification</span> exactly one value of <span class='datatype'><a href="#NativeFormatString">NativeFormatString</a></span>
+											</li>
+									</ul>
+					</dd>
+									<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Description</span> any number of values of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The GenericStructuredCOAType class extends the Course of Action StructuredCOAType class and belongs to the genericStructuredCOA package. It specifies an instantial extension from the abstract StructuredCOAType class intended to support the generic inclusion of any COA content. &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																									</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">H</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="HasActionImpact" class="headterm">HasActionImpact</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#ActionImpact">ActionImpact</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#CourseOfAction">CourseOfAction</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																							<dt>
+						<span id="HasActorType" class="headterm">HasActorType</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#ActorType">ActorType</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#ThreatActor">ThreatActor</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																							<dt>
+						<span id="HasCost" class="headterm">HasCost</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#CourseOfAction">CourseOfAction</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Cost">Cost</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																							<dt>
+						<span id="HasEfficacy" class="headterm">HasEfficacy</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#CourseOfAction">CourseOfAction</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Efficacy">Efficacy</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																																																																																																															<dt>
+						<span id="HasIntendedEffect" class="headterm">HasIntendedEffect</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#IntendedEffect">IntendedEffect</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#ThreatActor">ThreatActor</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#Campaign">Campaign</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#TTP">TTP</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#Incident">Incident</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																							<dt>
+						<span id="HasLikelyImpact" class="headterm">HasLikelyImpact</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#Indicator">Indicator</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#LikelyImpact">LikelyImpact</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																							<dt>
+						<span id="HasMotivation" class="headterm">HasMotivation</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Motivation">Motivation</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#ThreatActor">ThreatActor</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																							<dt>
+						<span id="HasObjective" class="headterm">HasObjective</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Objective">Objective</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#CourseOfAction">CourseOfAction</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																							<dt>
+						<span id="HasPlanningAndOperationalSupport" class="headterm">HasPlanningAndOperationalSupport</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#ThreatActor">ThreatActor</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#PlanningAndOperationalSupport">PlanningAndOperationalSupport</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																							<dt>
+						<span id="HasSophistication" class="headterm">HasSophistication</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Sophistication">Sophistication</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>From</span> any number of instances of <span class='classname'><a href="#ThreatActor">ThreatActor</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																								<dt>
+						<span id="History" class="headterm">History</span>
+					</dt>
+													<dd>
+								<p><span class='doc'>&lt;p&gt;The HistoryType class captures a record of events or actions taken as well as information discovered during the handling of the Incident.  This can include Courses of Action taken and general journal notes.  The time that the note is written, or the Course of Action taken and the author or actors involved may be specified.&lt;/p&gt;</span></p>
+							</dd>		
+																																																	<dt>
+						<span id="HistoryItem" class="headterm">HistoryItem</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Action_Entry</span> at most one value of <span class='datatype'><a href="#"></a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Journal_Entry</span> at most one value of <span class='datatype'><a href="#JournalEntry">JournalEntry</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The HistoryItemType class specifies the choice of either an action or journal entry as an item in the Incident’s history. &lt;/p&gt;</span></p>
+							</dd>		
+																																																				</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">I</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="ImpactAssessment" class="headterm">ImpactAssessment</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Impact_Qualification</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The ImpactAssessmentType class characterizes a summary assessment of impact for this cyber threat Incident. &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																																																																																																																																			<dt>
+						<span id="Incident" class="headterm">Incident</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#DescriptiveProperties and IDableConstruct">DescriptiveProperties and IDableConstruct</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>URL</span> at most one value of <span class='datatype'><a href="#URI">URI</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Status</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Security_Compromise</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Discovery_Method</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Confidence</span> at most one instance of <span class='classname'><a href="#Confidence">Confidence</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The IncidentType class characterizes a cyber threat Incident made up of sets of related security events affecting an organization, investigatory details of timing and personnel, as well as other characterizing information discovered or decisions reached during an incident response investigation.  Similar to the primary classes of all of the component data models in STIX, the IncidentType class extends a base class defined in the STIX Common data model; more specifically, it specializes the IncidentBaseType base class, which provides the essential identifier (id) and identifier reference (idref) properties.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																																																																																																																																																<dt>
+						<span id="Indicator" class="headterm">Indicator</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#DescriptiveProperties and IDableConstruct">DescriptiveProperties and IDableConstruct</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>negate</span> exactly one value of <span class='datatype'><a href="#Boolean">Boolean</a></span>
+											</li>
+									</ul>
+					</dd>
+									<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Indicator_Expression</span> at most one value of <span class='datatype'><a href="#PatternExpression">PatternExpression</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Type</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Indicator_Expression</span> at most one value of <span class='datatype'><a href="#PatternExpression">PatternExpression</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;the IndicatorType class characterizes a cyber threat indicator by capturing an asserted relationship between a pattern identifying certain observable conditions and a particular TTP likely in play if those observable conditions are seen, as well as contextual information about how and when it should be acted on and how it relates to other Indicators, Campaigns, and TTPs. Similar to the primary classes of all of the component data models in STIX, the IndicatorType class extends a base class defined in the STIX Common data model; more specifically, it extends the IndicatorBaseType base class, which provides the essential identifier (id) and identifier reference (idref) properties.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																													<dt>
+						<span id="IndicatorExpression" class="headterm">IndicatorExpression</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#IDableConstruct">IDableConstruct</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Efficacy</span> at most one value of <span class='datatype'><a href="#"></a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The TestMechanismType class characterizes an alternative (non-CybOX) test mechanism effective for representing the desired observable pattern of the Indicator.  It is an abstract class, so it MUST be extended via a subclass to enable the expression of any structured or unstructured test mechanism.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																													<dt>
+						<span id="IndirectImpactSummary" class="headterm">IndirectImpactSummary</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Loss_Of_Competitive_Advantage</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Brand_And_Market_Damage</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Increased_Operating_Costs</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Legal_And_Regulatory_Costs</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The IndirectImpactSummaryType class qualitatively characterizes (at a high level) the indirect impact of the Incident, both financial and non-financial.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																						<dt>
+						<span id="Infrastructure" class="headterm">Infrastructure</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#TTP">TTP</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Type</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Observable_Characterization</span> at most one value of <span class='datatype'><a href="#ObservablePattern">ObservablePattern</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The InfrastructureType class characterizes adversarial infrastructure that an adversary may leverage.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																										<dt>
+						<span id="IntendedEffect" class="headterm">IntendedEffect</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																								</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">K</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="KillChain" class="headterm">KillChain</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#TTP">TTP</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>definer</span> at most one value of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>reference</span> at most one value of <span class='datatype'><a href="#URI">URI</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;A cyber kill chain is a phase-based model to describe the stages of an attack.  The KillChainType class characterizes a kill chain definition that may be referenced elsewhere; for example, from within a TTP or an Indicator component.  Information captured includes a set of one or more kill chain phases that compose the kill chain.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																										<dt>
+						<span id="KillChainPhase" class="headterm">KillChainPhase</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#TTP">TTP</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;A cyber kill chain is a phase-based model to describe the stages of an attack, and a cyber kill chain phase is an individual phase within a kill chain definition.  The KillChainPhaseType class characterizes an individual phase within a kill chain.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																												</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">L</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="LikelyImpact" class="headterm">LikelyImpact</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																	<dt>
+						<span id="LossEstimation" class="headterm">LossEstimation</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>amount</span> at most one value of <span class='datatype'><a href="#Decimal">Decimal</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>iso_currency_code</span> at most one value of <span class='datatype'><a href="#NoEmbeddedQuotesString">NoEmbeddedQuotesString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The LossEstimationType class characterizes an estimated financial loss.&lt;/p&gt;</span></p>
+							</dd>		
+																																												</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">M</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="MAEC4.1Instance" class="headterm">MAEC4.1Instance</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#MalwareInstance">MalwareInstance</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The MAEC4.1InstanceType class provides an extension to the STIX TTP MalwareInstanceType class and belongs to the stix-maec package. It imports and leverages the MAEC 4.1 schema for structured characterization of malware. &lt;/p&gt;</span></p>
+							</dd>		
+																																																																									<dt>
+						<span id="MalwareInstance" class="headterm">MalwareInstance</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#TTP">TTP</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Type</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Name</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The MalwareInstanceType class characterizes a malware instance through the capture of basic information such as the type, name, and description of the malware.  A malware instance may characterize anything from a specific malware sample to an entire family. The MalwareInstanceType class is intended to be extended as appropriate to enable the structured description of a malware instance.  STIX defines a default extension to the MalwareInstanceType class to leverage the Malware Attribute Enumeration and Classification (MAEC) data model.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																										<dt>
+						<span id="Motivation" class="headterm">Motivation</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																															</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">N</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="Names" class="headterm">Names</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Name</span> at least one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The NamesType class specifies a set of one or more names. Note that a similar class is defined in the Campaign data model (campaign:NamesType), which will likely be removed in the next major version of STIX; Campaign names will be then defined exclusively via this STIX Common NamesType class. &lt;/p&gt;</span></p>
+							</dd>		
+																																													<dt>
+						<span id="Names" class="headterm">Names</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Name</span> at least one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The NamesType class specifies a set of one or more names used to identify the Campaign.  Note that an equivalent NamesType class is defined in the STIX Common data model; this duplication is due to backward-compatiblity issues and will be corrected in the next major release of STIX . At that time, the campaign:NamesType class will be removed, and Campaign names will be defined via the stixCommon:NamesType class. &lt;/p&gt;</span></p>
+							</dd>		
+																								<dt>
+						<span id="NatureOfSecurityEffect" class="headterm">NatureOfSecurityEffect</span>
+					</dt>
+													<dd>
+								<p><span class='doc'>&lt;p&gt;The NatureOfSecurityEffectType class specifies a set of zero or more security properties affected by the Incident.&lt;/p&gt;</span></p>
+							</dd>		
+																																			<dt>
+						<span id="NonPublicDataCompromised" class="headterm">NonPublicDataCompromised</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>data_encrypted</span> at most one value of <span class='datatype'><a href="#Boolean">Boolean</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The NonPublicDataCompromisedType class represents whether non-public data was compromised or exposed and whether that data was encrypted or not.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																												</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">O</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="Objective" class="headterm">Objective</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																										<dt>
+						<span id="OpenIOC2010IndicatorExpression" class="headterm">OpenIOC2010IndicatorExpression</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#IndicatorExpression">IndicatorExpression</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The OpenIOC2010TestMechanismType class enables OpenIOC indicators of compromise, as defined in the 2010 Open IOC data model, to be leveraged as test mechanisms of an Indicator.  The class is a specialization of the abstract TestMechanismType superclass defined in the indicator package.&lt;/p&gt;</span></p>
+							</dd>		
+																																													<dt>
+						<span id="OVAL5.10IndicatorExpression" class="headterm">OVAL5.10IndicatorExpression</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#IndicatorExpression">IndicatorExpression</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The OVAL5.10TestMechanismType class enables OVAL definitions and variables, as defined in the OVAL 5.10 data model, to be leveraged as test mechanisms of an Indicator.  The class is a specialization of the abstract TestMechanismType superclass defined in the indicator package.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">P</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="Package" class="headterm">Package</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#IDableConstruct">IDableConstruct</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Courses_Of_Action</span> any number of instances of <span class='classname'><a href="#CourseOfAction">CourseOfAction</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Indicators</span> any number of instances of <span class='classname'><a href="#Indicator">Indicator</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Reports</span> any number of instances of <span class='classname'><a href="#Report">Report</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Victims</span> any number of instances of <span class='classname'><a href="#Victim">Victim</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Sightings</span> any number of instances of <span class='classname'><a href="#Sighting">Sighting</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Sources</span> any number of instances of <span class='classname'><a href="#Source">Source</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Assertions</span> any number of instances of <span class='classname'><a href="#Assertion">Assertion</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Identities</span> any number of instances of <span class='classname'><a href="#Identity">Identity</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Incidents</span> any number of instances of <span class='classname'><a href="#Incident">Incident</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Relationships</span> any number of instances of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Exploit_Targets</span> any number of instances of <span class='classname'><a href="#ExploitTarget">ExploitTarget</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Observations</span> any number of instances of <span class='classname'><a href="#cyboxObservation">cyboxObservation</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Threat_Actors</span> any number of instances of <span class='classname'><a href="#ThreatActor">ThreatActor</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Campaigns</span> any number of instances of <span class='classname'><a href="#Campaign">Campaign</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>TTPs</span> any number of instances of <span class='classname'><a href="#TTP">TTP</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;the STIXType class, which defines a bundle of information characterized in the Structured Threat Information Expression (STIX) language. We refer to this bundle of information as a “STIX Package”.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																				<dt>
+						<span id="Persona" class="headterm">Persona</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Identity and TTP">Identity and TTP</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The PersonaType class specifies a persona that an adversary may leverage.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																										<dt>
+						<span id="PlanningAndOperationalSupport" class="headterm">PlanningAndOperationalSupport</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																													<dt>
+						<span id="Profiles" class="headterm">Profiles</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Profile</span> at least one value of <span class='datatype'><a href="#URI">URI</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The ProfilesType class specifies a list of one or more STIX Profiles.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																<dt>
+						<span id="PropertyAffected" class="headterm">PropertyAffected</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Property</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Description_Of_Effect</span> any number of values of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Type_Of_Availability_Loss</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Duration_Of_Availability_Loss</span> at most one value of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The PropertyAffectedType class characterizes aspects of how security properties of an asset, such as Availability, Confidentiality, etc., were affected in this Incident.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																														</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">Q</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="QuickSighting" class="headterm">QuickSighting</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#Sighting">Sighting</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																<li class='propdef'>				
+								<span class='propname'>Count</span> exactly zero values of <span class='datatype'><a href="#NonNegativeInteger">NonNegativeInteger</a></span>
+							</li>
+																																<li class='propdef'>				
+								<span class='propname'>Title</span> exactly zero values of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+							</li>
+																																<li class='propdef'>				
+								<span class='propname'>Description</span> exactly zero values of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+																																<li class='propdef'>				
+								<span class='propname'>Confidence</span> exactly zero instances of <span class='classname'><a href="#Confidence">Confidence</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																				</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">R</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="RelatedCampaign" class="headterm">RelatedCampaign</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Campaign">Campaign</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																					<dt>
+						<span id="RelatedCourseOfAction" class="headterm">RelatedCourseOfAction</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#CourseOfAction">CourseOfAction</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedExploitTarget" class="headterm">RelatedExploitTarget</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#ExploitTarget">ExploitTarget</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedIncident" class="headterm">RelatedIncident</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Incident">Incident</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedIndicator" class="headterm">RelatedIndicator</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Indicator">Indicator</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																					<dt>
+						<span id="RelatedKillChainPhase" class="headterm">RelatedKillChainPhase</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#KillChainPhase">KillChainPhase</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedObservation" class="headterm">RelatedObservation</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#cyboxObservation">cyboxObservation</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The RelatedObservableType class characterizes a relationship to a CybOX Observable.  It extends the GenericRelationshipType superclass by specifying a related Observable. &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedPackage" class="headterm">RelatedPackage</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Package">Package</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedReport" class="headterm">RelatedReport</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Report">Report</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The RelatedReportType class characterizes a relationship to a Report.  It extends the GenericRelationshipType superclass by specifying a related Report.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedSighting" class="headterm">RelatedSighting</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Sighting">Sighting</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedThreatActor" class="headterm">RelatedThreatActor</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#ThreatActor">ThreatActor</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedTTP" class="headterm">RelatedTTP</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#TTP">TTP</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The RelatedTTPType class characterizes a relationship to a TTP.  It extends the GenericRelationshipType superclass by specifying a related TTP. &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedVictim" class="headterm">RelatedVictim</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Victim">Victim</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																		<dt>
+						<span id="Report" class="headterm">Report</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#Assertion and DescriptiveProperties">Assertion and DescriptiveProperties</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Intent</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The ReportType class defines a contextual wrapper for a grouping of STIX content. Similar to the primary classes of all of the component data models in STIX, the ReportType class extends a base class defined in the STIX Common data model; more specifically, it extends the ReportBaseType base class, which provides the essential identifier (id) and identifier reference (idref) properties. &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																																																									</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">S</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="Sighting" class="headterm">Sighting</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#Assertion and DescriptiveProperties">Assertion and DescriptiveProperties</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>To</span> exactly one instance of <span class='classname'><a href="#Indicator">Indicator</a></span>
+											</li>
+									</ul>
+					</dd>
+									<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Count</span> at most one value of <span class='datatype'><a href="#NonNegativeInteger">NonNegativeInteger</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																															<dt>
+						<span id="SimpleMarkingStructure" class="headterm">SimpleMarkingStructure</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#MarkingDefinition">MarkingDefinition</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Statement</span> exactly one value of <span class='datatype'><a href="#"></a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The SimpleMarkingStructureType class extends the Data Marking MarkingStructureType class and is a basic implementation of the Data Marking data model that allows for a string statement to be associated with the data being marked. It is contained in the simpleMarking package. One example is the application of a copyright statement to some data set.  &lt;/p&gt;&lt;p&gt;Nodes may be marked by multiple Simple Marking statements. When this occurs, all of the multiple Simple Marking statements apply. It is up to the organization adding an additional Simple Marking statement to ensure that the addition does not conflict with any previously applied Simple Marking statements.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																											<dt>
+						<span id="SnortIndicatorExpression" class="headterm">SnortIndicatorExpression</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#IndicatorExpression">IndicatorExpression</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Product_Name</span> at most one value of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Version</span> at most one value of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Rule</span> any number of values of <span class='datatype'><a href="#NativeFormatString">NativeFormatString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Event_Filter</span> any number of values of <span class='datatype'><a href="#NativeFormatString">NativeFormatString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Rate_Filter</span> any number of values of <span class='datatype'><a href="#NativeFormatString">NativeFormatString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Event_Suppression</span> any number of values of <span class='datatype'><a href="#NativeFormatString">NativeFormatString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The SnortTestMechanismType class enables a Snort signature be leveraged as a test mechanism in an Indicator.  The class is a specialization of the abstract TestMechanismType superclass defined in the indicator package.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																										<dt>
+						<span id="Sophistication" class="headterm">Sophistication</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Assertion">Assertion</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																																																			<dt>
+						<span id="STIXCIQIdentity3.0" class="headterm">STIXCIQIdentity3.0</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#DetailedIdentitySpecification and PartyType">DetailedIdentitySpecification and PartyType</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>LanguageCode</span> exactly one value of <span class='datatype'><a href="#LanguageCode">LanguageCode</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																				<dt>
+						<span id="StructuredCOA" class="headterm">StructuredCOA</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>id</span> at most one value of <span class='datatype'><a href="#QualifiedName">QualifiedName</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>idref</span> at most one value of <span class='datatype'><a href="#QualifiedName">QualifiedName</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The StructuredCOAType class enables the specification of an alternative actionable structured representation for the Course of Action potentially for automated consumption and implementation. The StructuredCOAType class is an abstract class and is intended to be extended via a subclass to enable the expression of any structured course of actions. STIX has provided support for passing proprietary or externally defined structured courses of action using the GenericStructuredCOAType class (see Extensions package).&lt;/p&gt;</span></p>
+							</dd>		
+																																																																	</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">T</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="TermsOfUseMarkingStructure" class="headterm">TermsOfUseMarkingStructure</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#MarkingDefinition">MarkingDefinition</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Terms_Of_Use</span> exactly one value of <span class='datatype'><a href="#"></a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The TermsOfUseMarkingStructureType class extends the Data Marking MarkingStructureType class and is a basic implementation of the Data Marking data model that allows for a string statement describing the Terms of Use to be associated with the data being marked.  It is contained in the TOUMarking package.&lt;/p&gt;&lt;p&gt;Nodes may be marked by multiple Terms of Use Marking statements. When this occurs, all of the multiple Terms of Use Marking statements apply. It is up to the organization adding an additional Terms of Use Marking statement to ensure that the addition does not conflict with any previously applied Terms of Use Marking statements.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																																																																																																																																																																		<dt>
+						<span id="ThreatActor" class="headterm">ThreatActor</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#Identity">Identity</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Confidence</span> at most one instance of <span class='classname'><a href="#Confidence">Confidence</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																			<dt>
+						<span id="Time" class="headterm">Time</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>First_Malicious_Action</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Initial_Compromise</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>First_Data_Exfiltration</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Incident_Discovery</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Incident_Opened</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Containment_Achieved</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Restoration_Achieved</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Incident_Reported</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Incident_Closed</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The TimeType class characterizes key time points of interest for the Incident.&lt;/p&gt;</span></p>
+							</dd>		
+																																																															<dt>
+						<span id="TLPMarkingStructure" class="headterm">TLPMarkingStructure</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#MarkingDefinition">MarkingDefinition</a></span>. A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>color</span> exactly one value of <span class='datatype'><a href="#TLPColorEnum">TLPColorEnum</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The TLPMarkingStructureType class extends the Data Marking MarkingStructureType class and is a basic implementation of the Data Marking data model that allows for a Traffic Light Protocol designation to be attached to an identified structure. It is contained in the tlpMarking package.&lt;/p&gt;&lt;p&gt;STIX objects may be marked by multiple TLP Marking statements. When this occurs, the object should be considered marked at the most restrictive TLP Marking of all TLP Markings that were applied to it. For example, if an object is marked both GREEN and AMBER, the object should be considered AMBER.&lt;/p&gt;&lt;p&gt;Information about TLP is available here: http://www.us-cert.gov/tlp.&lt;/p&gt;</span></p>
+							</dd>		
+																											<dt>
+						<span id="TotalLossEstimation" class="headterm">TotalLossEstimation</span>
+					</dt>
+													<dd>
+								<p><span class='doc'>&lt;p&gt;The TotalLossEstimationType class characterizes both the initial reported and actual estimated financial losses for this Incident.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																																															<dt>
+						<span id="TTP" class="headterm">TTP</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#DescriptiveProperties and IDableConstruct">DescriptiveProperties and IDableConstruct</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>&lt;p&gt;The TTPType class characterizes adversarial mode of operations (often referred to as the adversary’s “Tactics, Techniques, and Procedures”).  The TTPType class captures information that includes the victims targeted, the attack patterns and malware used, and the resources (infrastructure, tools, and personas) leveraged. Similar to the primary classes of all the component data models in STIX, the TTPType class extends a base class defined in the STIX Common data model; more specifically, it extends the TTPBaseType base class, which provides the essential identifier (id) and identifier reference (idref) properties.&lt;/p&gt;</span></p>
+							</dd>		
+																																																			</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">V</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="ValidTime" class="headterm">ValidTime</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Start_Time</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>End_Time</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The ValidTimeType class characterizes a temporal window during which the Indicator is able to accurately detect the TTP.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																													<dt>
+						<span id="Victim" class="headterm">Victim</span>
+					</dt>
+													<dd>
+						<p>A kind of <span class='classname'><a href="#Identity">Identity</a></span>.</p>
+					</dd>
+							<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																														<dt>
+						<span id="VictimTargeting" class="headterm">VictimTargeting</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#TTP and Victim">TTP and Victim</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>Targeted_Systems</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Targeted_Information</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Targeted_Technical_Details</span> at most one value of <span class='datatype'><a href="#ObservablePattern">ObservablePattern</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The VictimTargetingType class characterizes victim targeting information by capturing information about the people, organizations, systems and/or data potentially targeted by the adversary.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																<dt>
+						<span id="Vulnerability" class="headterm">Vulnerability</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#ExploitTarget">ExploitTarget</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>is_known</span> at most one value of <span class='datatype'><a href="#Boolean">Boolean</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>is_publicly_acknowledged</span> at most one value of <span class='datatype'><a href="#Boolean">Boolean</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>CVE_ID</span> at most one value of <span class='datatype'><a href="#CVE_ID">CVE_ID</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>OSVDB_ID</span> at most one value of <span class='datatype'><a href="#PositiveInteger">PositiveInteger</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Discovered_DateTime</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Published_DateTime</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Affected_Software</span> any number of values of <span class='datatype'><a href="#ObservablePattern">ObservablePattern</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>References</span> at most one value of <span class='datatype'><a href="#"></a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The VulnerabilityType class characterizes an individual vulnerability.  In addition to capturing basic information and references to vulnerability registries, this class is extensible to enable the structured description of a vulnerability.  STIX v1.2.1 defines a default subclass to leverage the Common Vulnerability Reporting Format (CVRF) schema :  the CVRF1.1InstanceType class (see Extension package)&lt;/p&gt;</span></p>
+							</dd>		
+																																																										</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">W</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="Weakness" class="headterm">Weakness</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#ExploitTarget">ExploitTarget</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>CWE_ID</span> at most one value of <span class='datatype'><a href="#CWE_ID">CWE_ID</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The WeaknessType class characterizes a weakness as a potential Exploit Target.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																					</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">Y</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="YaraIndicatorExpression" class="headterm">YaraIndicatorExpression</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#IndicatorExpression">IndicatorExpression</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Version</span> at most one value of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Rule</span> at most one value of <span class='datatype'><a href="#NativeFormatString">NativeFormatString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The YaraTestMechanismType class enables a Yara signature to be leveraged as a test mechanism in an Indicator.  The class is a specialization of the abstract TestMechanismType superclass defined in the indicator package.&lt;/p&gt;</span></p>
+							</dd>		
+					</dl>
+			</dd>
+		</dl>
+	</body>
+</html>	

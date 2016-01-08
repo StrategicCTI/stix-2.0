@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CCM Natural Language Glossary</title>
+		<meta charset="utf-8" />
+		<style>
+			.propdef {} 
+			.propname {font-style: italic;} 
+			.classname {} 
+			.datatype {font-style: italic;}
+			.headterm {font-weight: bold;}
+			.groupingterm {font-weight: bold; font-size: x-large;}
+			.doc {font-style: italic;}
+		</style>
+	</head>
+	<body>
+		<dl>
+																														<dt>
+				<span class="groupingterm">A</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="AddressAbstract" class="headterm">AddressAbstract</span>
+					</dt>
+													<dd>
+								<p><span class='doc'>&lt;p&gt;The AddressAbstractType class characterizes geographic address information.  It is an abstract class, so it MUST be extended via a subclass to capture an address.  STIX defines the CIQAddress3.0InstanceType subclass as a default extension to leverage the OASIS Customer Information Quality (CIQ) data model, which is a set of XML specifications for representing characteristic information about individuals and organizations.  Details are provided in the extensions package.&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																																																																																											</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">C</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="ControlledVocabularyProperty" class="headterm">ControlledVocabularyProperty</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>Value</span> any number of values of <span class='datatype'><a href="#ControlledVocabularyString">ControlledVocabularyString</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>Other_Value</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>Other_Vocab</span> any number of values of <span class='datatype'><a href="#URI">URI</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>Value</span> any number of values of <span class='datatype'><a href="#ControlledVocabularyString">ControlledVocabularyString</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>Other_Value</span> any number of values of <span class='datatype'><a href="#VocabularyString">VocabularyString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																				</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">D</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="DescriptiveProperties" class="headterm">DescriptiveProperties</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Title</span> at most one value of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Description</span> any number of values of <span class='datatype'><a href="#StructuredText">StructuredText</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																								<dt>
+						<span id="DetailedIdentitySpecification" class="headterm">DetailedIdentitySpecification</span>
+					</dt>
+													<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																																																																																																																																				</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">I</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="IDableConstruct" class="headterm">IDableConstruct</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary condition:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Id</span> exactly one value of <span class='datatype'><a href="#Identifier">Identifier</a></span>
+											</li>
+									</ul>
+					</dd>
+									<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Timestamp</span> at most one value of <span class='datatype'><a href="#Timestamp">Timestamp</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Language_Version</span> at most one value of <span class='datatype'><a href="#Version">Version</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>External_IDs</span> any number of values of <span class='datatype'><a href="#ExternalID">ExternalID</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Revision</span> at most one value of <span class='datatype'><a href="#Integer">Integer</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Marking_Refs</span> any number of values of <span class='datatype'><a href="#Identifier">Identifier</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>External_IDs</span> any number of values of <span class='datatype'><a href="#ExternalID">ExternalID</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																																																																																				<dt>
+						<span id="Identity" class="headterm">Identity</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#DescriptiveProperties and IDableConstruct">DescriptiveProperties and IDableConstruct</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Name</span> at most one value of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>Role</span> any number of values of <span class='datatype'><a href="#IdentityRole">IdentityRole</a></span>
+							</li>
+																																			<li class='propdef'>				
+								<span class='propname'>Specification</span> at most one instance of <span class='classname'><a href="#DetailedIdentitySpecification">DetailedIdentitySpecification</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The IdentityType class characterizes identity information for both individuals and organizations.  The IdentityType class is intended to be extended via a subclass to capture the structured descriptions of identity information for both individuals and organizations. STIX defines a default extension to the IdentityType class to leverage the OASIS Customer Information Quality (CIQ) data model, which is a set of XML specifications for representing characteristic information about individuals and organizations (see extensions package).&lt;/p&gt;</span></p>
+							</dd>		
+																																																																																</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">M</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="MarkingDefinition" class="headterm">MarkingDefinition</span>
+					</dt>
+															<dd>
+									<p>A valid instance satisfies the following necessary conditions:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>id</span> exactly one value of <span class='datatype'><a href="#Identifier">Identifier</a></span>
+											</li>
+																															<li class='propdef'>				
+												<span class='propname'>Marking_Type</span> exactly one value of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+											</li>
+									</ul>
+					</dd>
+											<dd>
+								<p><span class='doc'>&lt;p&gt;The MarkingStructureType class characterizes the marking information to be applied to STIX content.  The class is simply a mechanism for leveraging externally defined marking systems, and it is intended to be extended to enable the expression of any structured or unstructured data marking mechanism. &lt;/p&gt;</span></p>
+							</dd>		
+																																																																																																		</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">R</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="RelatedIdentity" class="headterm">RelatedIdentity</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>Role</span> any number of values of <span class='datatype'><a href="#IdentityRole">IdentityRole</a></span>
+							</li>
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Identity">Identity</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																		<dt>
+						<span id="RelatedSource" class="headterm">RelatedSource</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#RelationshipBase">RelationshipBase</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																					<li class='propdef'>				
+								<span class='propname'>To</span> any number of instances of <span class='classname'><a href="#Source">Source</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																																																																																																																																																																																									<dt>
+						<span id="RelationshipBase" class="headterm">RelationshipBase</span>
+					</dt>
+															<dd>
+									<p>A kind of <span class='classname'><a href="#Assertion and DescriptiveProperties">Assertion and DescriptiveProperties</a></span>. A valid instance satisfies the following necessary conditions:</p>
+									<ul>	
+																															<li class='propdef'>				
+												<span class='propname'>Is_Bidirectional</span> exactly one value of <span class='datatype'><a href="#Boolean">Boolean</a></span>
+											</li>
+																															<li class='propdef'>				
+												<span class='propname'>To</span> at least one instance of <span class='classname'><a href="#IDableConstruct">IDableConstruct</a></span>
+											</li>
+																															<li class='propdef'>				
+												<span class='propname'>From</span> exactly one instance of <span class='classname'><a href="#IDableConstruct">IDableConstruct</a></span>
+											</li>
+									</ul>
+					</dd>
+									<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Relationship_Nature</span> at most one value of <span class='datatype'><a href="#ControlledVocabularyString">ControlledVocabularyString</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>(Undocumented)</span><p>	
+							</dd>		
+																																																																																																																																																																		</dl>
+			</dd>
+												<dt>
+				<span class="groupingterm">S</span>
+			</dt>
+			<dd>
+				<dl>
+										<dt>
+						<span id="Source" class="headterm">Source</span>
+					</dt>
+											<dd>
+									<p>A kind of <span class='classname'><a href="#Identity">Identity</a></span>. An instance may have the following properties:</p>
+									<ul>	
+																																				<li class='propdef'>				
+								<span class='propname'>References</span> any number of values of <span class='datatype'><a href="#URI">URI</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Tools</span> any number of instances of <span class='classname'><a href="#ToolInformationType">ToolInformationType</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The InformationSourceType class specifies source information for the given STIX content. &lt;/p&gt;</span></p>
+							</dd>		
+																																																	<dt>
+						<span id="StructuredMarking" class="headterm">StructuredMarking</span>
+					</dt>
+											<dd>
+									<p>An instance may also have the following properties:</p>
+									<ul>	
+																																			<li class='propdef'>				
+								<span class='propname'>Controlled_Structure</span> at most one value of <span class='datatype'><a href="#BasicString">BasicString</a></span>
+							</li>
+																																				<li class='propdef'>				
+								<span class='propname'>Marking_Refs</span> any number of values of <span class='datatype'><a href="#Identifier">Identifier</a></span>
+							</li>
+									</ul>
+					</dd>
+									<dd>
+								<p><span class='doc'>&lt;p&gt;The MarkingSpecificationType class characterizes a data marking specification that is applied to the STIX content.  Information captured includes the structured elements to which the data marking is to be applied, a set of marking structures, and source information.&lt;/p&gt;</span></p>
+							</dd>		
+					</dl>
+			</dd>
+		</dl>
+	</body>
+</html>	
